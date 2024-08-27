@@ -1,0 +1,35 @@
+// this code is Sum of Numbers in a Given Interval in java
+import java.util.Scanner;
+public class evenOrOddNumber{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+        int sum=0;
+        for(int i=a;i<=b;i++){
+            sum=sum+i;
+        }
+        System.out.println(sum);
+    }
+}
+
+
+// this code is Sum of Numbers in a Given Interval in c
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("enter a number:");
+    scanf("%d",&a);
+    int b;
+    printf("enter a number:");
+    scanf("%d",&b);
+    int sum=0;
+    for(int i=a;i<=b;i++){
+            sum=sum+i;
+        }
+    printf("sum is %d",sum);
+    return 0;
+}
