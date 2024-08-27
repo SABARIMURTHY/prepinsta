@@ -1,0 +1,37 @@
+//this code is to Greatest of two numbers in java
+import java.util.Scanner;
+public class evenOrOddNumber{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a=sc.nextInt();
+        System.out.println("Enter the number:");
+        int b=sc.nextInt();
+        if(a>b){
+            System.out.println("a is greater number");
+        }
+        else{
+            System.out.println("b is greater number");
+        }
+}
+}
+
+
+//this code is to Greatest of two numbers in c
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf("enter a number:");
+    scanf("%d",&a);
+    int b;
+    printf("enter a number:");
+    scanf("%d",&b);
+    if(a>b){
+            printf("a is greater number");
+        }
+        else{
+            printf("b is greater number");
+        }
+    return 0;
+}
