@@ -1,0 +1,46 @@
+//this code is to print array in java
+import java.util.Scanner;  
+public class ArrayInputExample1   
+{  
+public static void main(String[] args)   
+{  
+int n;  
+Scanner sc=new Scanner(System.in);  
+System.out.print("Enter the number of elements you want to store: ");  
+n=sc.nextInt();
+System.out.print("Enter the array size: ");
+int arraysize=sc.nextInt();
+int[] array = new int[arraysize];  
+System.out.println("Enter the elements of the array: ");  
+for(int i=0; i<n; i++)  
+{  
+array[i]=sc.nextInt();  
+}  
+System.out.println("Array elements are: ");  
+for (int i=0; i<n; i++)   
+{  
+System.out.println(array[i]);  
+}  
+}  
+} 
+
+//this code is to print array in c
+#include <stdio.h>
+
+int main() {
+    int n,na;
+    printf("Enter a number of elements you want to enter:");
+    scanf("%d",&n);
+    printf("Enter array size:");
+    scanf("%d",&na);
+    int b[na];
+    printf("Enter a elements:");
+    for(int i=0;i<n;i++){
+       scanf("%d",&b[i]);  
+    }
+    printf("The elements are:");
+    for(int i=0;i<n;i++){
+       printf("%d",b[i]);  
+    }
+    return 0;
+}
