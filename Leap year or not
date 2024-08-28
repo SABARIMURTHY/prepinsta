@@ -1,0 +1,63 @@
+//this code is to check Leap year or not in java
+import java.util.Scanner;  
+public class ArrayInputExample1   
+{  
+public static void main(String[] args)   
+{  
+int a;  
+Scanner sc=new Scanner(System.in);  
+System.out.println("Enter the first number: ");  
+a=sc.nextInt();
+if((a%4==0&&a%100!=0)||(a%400==0)){
+    System.out.println("the given year is a leap year");
+}
+else{
+    System.out.println("the given year is not a leap year");
+}
+}
+}  
+
+//this code is to check Leap year or not in c
+# include<stdio.h>
+int main(){
+   int a;  
+   printf("Enter the year: ");  
+   scanf("%d",&a);
+
+   if((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)){
+      printf(" %d is leap year",a);
+   }
+   else{
+       printf("%d is not leap year",a);
+   }
+return 0;
+}
+
+//this code for programiz in c
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   // leap year if perfectly divisible by 400
+   if (year % 400 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // not a leap year if divisible by 100
+   // but not divisible by 400
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+   // leap year if not divisible by 100
+   // but divisible by 4
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+   // all other years are not leap years
+   else {
+      printf("%d is not a leap year.", year);
+   }
+
+   return 0;
+}
