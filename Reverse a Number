@@ -1,0 +1,39 @@
+//this code is to reverse a given number in java
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number");
+        int n=sc.nextInt();
+        int rev=0;
+        int rem;
+        while(n!=0){
+            rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+        }
+        System.out.println("the reversed number is "+ rev);
+        
+        
+    }
+}
+
+//this code is to reverse a given number in c
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    int rev=0;
+    int rem;
+    while(n!=0){
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    printf("the reversed number is %d ", rev);
+        
+
+    return 0;
+}
