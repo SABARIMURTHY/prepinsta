@@ -1,0 +1,45 @@
+//this code is to check whether armstrong number or not in java
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       System.out.println("Enter the number:");
+       Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int sum=0;
+       int temp=n;
+       while(n!=0){
+           int rem=n%10;
+           sum=sum+(rem*rem*rem);
+           n=n/10;
+       }
+       if(sum==temp){
+           System.out.println("the given number is armstrong number");
+       }
+       else{
+            System.out.println("the given number is not armstrong number");
+       }
+    }
+}
+
+//this code is to check whether armstrong number or not in c
+#include <stdio.h>
+
+int main() {
+       int n;
+       printf("Enter the number:");
+       scanf("%d",&n);
+       int sum=0;
+       int temp=n;
+       while(n!=0){
+           int rem=n%10;
+           sum=sum+(rem*rem*rem);
+           n=n/10;
+       }
+       if(sum==temp){
+           printf( "%d number is armstrong number",temp);
+       }
+       else{
+            printf("%d number is not armstrong number",temp);
+       }
+    return 0;
+}
